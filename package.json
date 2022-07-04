@@ -1,0 +1,16 @@
+{
+  "name": "yandex-translate-print",
+  "version": "1.0.0",
+  "description": "print words translation on yandex translate website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yandex",
+    "translate",
+    "print"
+  ],
+  "author": "musabii",
+  "license": "ISC"
+}

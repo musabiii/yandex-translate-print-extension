@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "yandex translate print extension",
+  "description": "print words on yandex translate website",
+  "version": "1.0.0",
+  "icons": { "50": "./img/printicon.png" },
+  "action": {
+    "default_icon": "./img/printicon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://translate.yandex.ru/*"],
+      "js": ["./content.js"],
+      "css": ["./style.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["img/vscode.svg", "img/codesandbox.svg"],
+      "matches": ["https://translate.yandex.ru/*"]
+    }
+  ]
+}
